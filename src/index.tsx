@@ -22,7 +22,7 @@ const GlobalStyle = createGlobalStyle`
   button { 
     boder: none;
     cursor: pointer;
-    :focus {
+    &:focus {
       outline: none;
     }
   }
@@ -31,9 +31,6 @@ const GlobalStyle = createGlobalStyle`
     background-color: transparent;
     border: none;
     font-size: 1rem;
-    :focus {
-      outline: none;
-    }
   }
 `;
 
