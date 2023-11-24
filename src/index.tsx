@@ -4,7 +4,7 @@ import App from "./App";
 import "./index.css";
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
-import { QueryClient, QueryClientProvider } from "react-query";
+import { RecoilRoot } from "recoil";
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
@@ -34,16 +34,14 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-const queryClient = new QueryClient();
-
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <QueryClientProvider client={queryClient}>
+    <RecoilRoot>
       <GlobalStyle />
       <App />
-    </QueryClientProvider>
+    </RecoilRoot>
   </React.StrictMode>
 );
