@@ -1,10 +1,10 @@
-import { selector } from "recoil";
+import { selector, selectorFamily } from "recoil";
 import axios from "axios";
 import { Characters } from "../types";
 
-export const getCharacter = selector({
+export const getCharacter = selectorFamily({
   key: "getCharacter",
-  get: async (characterName) => {
+  get: (characterName: string | undefined) => async () => {
     try {
       const response: Characters = await axios.get(
         `https://developer-lostark.game.onstove.com/characters/${characterName}/siblings`,
