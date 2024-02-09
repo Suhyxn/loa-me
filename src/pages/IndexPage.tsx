@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-
 import SearchArea from "../components/SearchArea";
 
 const Base = styled.div``;
@@ -38,11 +37,11 @@ function IndexPage() {
         <LogoImage src="/assets/loame-logo.png" />
       </LogoContainer>
       <Container>
-        <Advertisement></Advertisement>
+        <Advertisement />
         <ContentContainer>
           <SearchArea />
         </ContentContainer>
-        <Advertisement></Advertisement>
+        <Advertisement />
       </Container>
     </Base>
   );
