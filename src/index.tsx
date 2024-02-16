@@ -32,6 +32,10 @@ const GlobalStyle = createGlobalStyle`
     border: none;
     font-size: 1rem;
   }
+
+  img {
+    vertical-align: middle;
+  }
 `;
 
 const root = ReactDOM.createRoot(
