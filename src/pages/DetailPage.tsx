@@ -5,6 +5,7 @@ import { Characters } from "../types";
 import { useRecoilValue } from "recoil";
 import styled from "styled-components";
 import Profile from "../components/Profile";
+import Engraving from "../components/Engraving";
 
 const Base = styled.div``;
 
@@ -20,27 +21,6 @@ const Advertisement = styled.div`
 const ContentContainer = styled.div`
   width: 60%;
   background-color: #ffffff;
-`;
-
-const Engravings = styled.div``;
-
-const EngravingContainer = styled.div``;
-
-const EngravingImage = styled.img`
-  width: 46px;
-  height: 46px;
-  background-color: #000000;
-  color: #ffffff;
-`;
-
-const EngravingLevel = styled.small`
-  color: #ffffff;
-  padding-right: 0.25rem;
-  padding-left: 0.2rem;
-`;
-
-const EngravingContent = styled.span`
-  letter-spacing: -1.5px;
 `;
 
 const jewels = styled.div``;
@@ -65,14 +45,7 @@ function DetailPage() {
         <ContentContainer>
           <div>
             <Profile />
-            <Engravings>
-              <EngravingContainer>
-                <EngravingImage />
-                <EngravingLevel>3</EngravingLevel>
-                <EngravingContent>긱인 내용</EngravingContent>
-              </EngravingContainer>
-              <div>보석</div>
-            </Engravings>
+            <Engraving />
             <div>
               <div>메뉴바</div>
               <div>장비</div>
