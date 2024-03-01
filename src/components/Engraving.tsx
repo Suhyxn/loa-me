@@ -54,7 +54,7 @@ const EngravingContent = styled.span`
 `;
 
 function Engraving() {
-  const engraving = "수라의 길 Lv. 3";
+  const engraving: string = "수라의 길 Lv. 3";
   return (
     <Engravings>
       <EngravingContainer>
