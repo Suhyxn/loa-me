@@ -20,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   button { 
-    boder: none;
+    border: none;
     cursor: pointer;
     &:focus {
       outline: none;
