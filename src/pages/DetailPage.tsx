@@ -8,6 +8,7 @@ import Profile from "../components/Profile";
 import Engraving from "../components/Engraving";
 import Gem from "../components/Gem";
 import Tabs from "../components/Tabs";
+import Ability from "../components/Ability";
 
 const Base = styled.div``;
 
@@ -54,7 +55,7 @@ function DetailPage() {
         </ContentContainer>
         <ContentContainer>
           <Tabs tab={selectedTab} onClick={TabClick} />
-          {selectedTab === "ability" && <>Ability</>}
+          {selectedTab === "ability" && <Ability />}
           {selectedTab === "skills" && <>Skills</>}
           {selectedTab === "collections" && <>Collections</>}
         </ContentContainer>
